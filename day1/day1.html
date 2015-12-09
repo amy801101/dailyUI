@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day1 - Sign Up</title>
+	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<style type="text/css">
+	body {
+		font-family: 'Amatic SC', cursive;
+	}
+	.fullscreen-bg {
+		position: fixed;
+		z-index: -1;
+		top:0px; right:0; bottom:0; left:-190px;
+		/*top:0; right:0; bottom:0; left:0;*/
+		/*width: 120%;*/
+		background: url('./bg.jpg') center;
+		background-size: cover;
+	}
+	.logo {
+		margin-top: 2em;
+		font-family: 'Amatic SC', cursive;
+		font-size: 5.5rem;
+		font-weight: 900;
+	}
+	.absolute-center {
+		position: absolute;
+		left: 50%; right: 50%;
+		width: 15rem;
+ 		margin-left: -7.5rem;
+	}
+	.absolute-right {
+		position: absolute;
+		left: 75%; right: 25%;
+		width: 15rem;
+ 		margin-left: -7.5rem;
+	}
+	.form {
+	  /*margin-top: -4.5em;*/
+	  transition: 1s ease-in-out;
+	  min-width: 250px;
+	}
+	.login-panel {
+		/*width: 25%;*/
+	}
+	.input {
+		-moz-box-sizing: border-box;
+       	box-sizing: border-box;
+       	width: 100%;
+		background-color: rgba(255,255,255,.9);
+		padding-left: 1.5rem;
+		border: 0;
+		font-size: 2.5rem;
+		line-height: 5.5rem;
+	}
+	.input-top {
+		border-radius: 0.5rem 0.5rem 0 0;
+		border-top: 0;
+	}
+	.input-submit {
+		background-color: rgba(126, 69, 59, 0.9);
+		border-top: 0;
+		color: #fff;
+		font-weight: bold;
+		/*cursor: pointer;*/
+	}
+	.input-fb-submit {
+		background-color: #2C51D1;
+		border-radius: 0 0 0.5rem 0.5rem;
+		border: 0;
+		border-bottom: 5px;
+		border-style: solid;
+    	border-color: #19369B;
+		color: #fff;
+		margin-bottom: 1rem;
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body class="container">
+	<div class="fullscreen-bg"></div>
+	<div class="row">
+		<div class="login-panel col-md-4 col-md-offset-8 col-xs-10 col-xs-offset-1">
+			<div class="logo">Do Something</div>
+			<form class="form">
+				<input type="email" placeholder="Email" class="input input-top" />
+	    		<input type="password" placeholder="Password" class="input" />
+	    		<input type="submit" value="Sign Up" class="input input-submit" />
+	    		<input type="submit" value="Facebook Sign Up" class="input input-fb-submit" />
+			</form>
+		</div>
+	</div>
+</body>
+</html>
