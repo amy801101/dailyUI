@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Day2 - Credit Card Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="container">
+    <div class="credit-card-wrapper row">
+        <div class="credit-card front col-md-8 col-md-offset-2">
+            <div class="front-title">CREDIT CARD</div>
+            <div class="front-numbers">
+                <div class="title">CARD NUMBER</div>
+                <div class="numbers">
+                    <input type="text" class="number-1" maxlength="4">
+                    <input type="text" class="number-2" maxlength="4">
+                    <input type="text" class="number-3" maxlength="4">
+                    <input type="text" class="number-4" maxlength="4">
+                </div>
+            </div>
+            <div class="front-expire-date">
+                <div class="title">
+                    <div>VALID</div>
+                    <div>THRU</div>
+                </div>
+                <div class="month">
+                    <div class="title">MONTH</div>
+                    <select name="months">
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <div class="title">YEAR</div>
+                    <select name="years">
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+            </div>
+            <div class="front-card-brand">
+            	<img src="img/mastercard.png" class="master">
+            	<!-- <select>
+                    <option value="master" class="master">
+                    	<img src="img/mastercard.png">
+          			</option>
+                    <option value="amex" class="amex"></option>
+                    <option value="visa" class="visa"></option>
+                    <option value="discover" class="discover"></option>
+                    <option value="paypal" class="paypal"></option>
+                </select> -->
+            </div>
+        </div>
+        <div class="credit-card back unfocused col-md-8 col-md-offset-2">
+		    <div class="magnetic-strip"></div>
+		    <div class="credit-card-ccv">
+		    	<div class="credit-card-ccv-label">CCV CODE</div>
+		    	<div class="credit-card-ccv-strip">
+		        	<div class="credit-card-ccv-prefix">XXXX</div>
+		        	<!-- <div class="credit-card-ccv-box"></div> -->
+		        	<input type="text" class="tbx-ccv"  maxlength='4'/>
+		        <!-- <div class="credit-card-ccv-prefix">XXXX</div> -->
+		      	</div>
+		    </div>
+		</div>
+    </div>
+    <script type="text/javascript">
+    // var CreditCard = (function($, m) {
+
+    //   var init = function() {
+    //     $('.credit-card.front input, .credit-card.front  select').on('focus', front_focus);
+    //     $('.credit-card.back input').on('focus', back_focus);
+    //   };
+
+    //   var front_focus = function() {
+    //     $('.credit-card.back').addClass('unfocused');
+    //     $(this).closest('.credit-card').removeClass('unfocused');
+    //   };
+
+    //   var back_focus = function() {
+    //     $('.credit-card.front').addClass('unfocused');
+    //     $(this).closest('.credit-card').removeClass('unfocused');
+    //   };
+
+    //   return {
+    //     init: init
+    //   }
+
+    // }(jQuery, CreditCard || {}));
+
+    // CreditCard.init();
+    </script>
+</body>
+
+</html>

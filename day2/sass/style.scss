@@ -1,0 +1,184 @@
+@mixin drop-shadow($h, $v, $blur, $spread, $color) {
+  -moz-box-shadow: $h $v $blur $spread $color;
+  -webkit-box-shadow: $h $v $blur $spread $color;
+  box-shadow: $h $v $blur $spread $color;
+}
+@mixin skew($x, $y) {
+ -moz-transform:    skew($x, $y);
+ -o-transform:      skew($x, $y);
+ -webkit-transform: skew($x, $y);
+ transform:         skew($x, $y);
+}
+
+$margin: 24px;
+body{
+    background-color: lightblue;
+}
+.credit-card-wrapper {
+    $card_height: 240px;
+    $golden_ratio: 1.618;
+    $focused_color: #F5C700;
+    $unfocused_color: darken($focused_color, 10%);
+    margin-top: 10rem;
+
+    .credit-card {
+        @include drop-shadow(0px, 0px, 10px, 2px, #000);
+        background: $focused_color;
+        border-radius: 8px;
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        height: $card_height;
+        width: $card_height * $golden_ratio;
+        &.unfocused {
+            background: $unfocused-color;
+        }
+    }
+    .front {
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+        padding: $margin $margin $margin $margin;
+        .front-title{
+            font-size: 18px;
+            font-weight: bolder;
+            // margin: $margin 0 0 $margin;
+        }
+        .front-numbers{
+            padding: $margin/2 0 0;
+            .title{
+                margin: $margin/4 0 $margin/4 0;
+            }
+            .numbers{
+                input {
+                    background: darken($focused_color, 5%);
+                    border-radius: 4px;
+                    border: 1px solid white;
+                    color: white;
+                    font-size: 30px;
+                    margin: 0 $margin/8 0 0;
+                    padding: $margin/8;
+                    width: 23%;
+                }
+            }
+        }
+        .front-expire-date{
+            padding: 0px;
+            &> div {
+                float: left;
+            }
+            .title{
+                padding: $margin*1.35 0 0 0;
+            }
+            .month, .year{
+                padding: $margin/2 0 0 $margin/2;
+                .title{
+                    // margin-bottom: $margin / 4;
+                    padding-top: 0; 
+                }
+                // margin-bottom: $margin/4;
+                // &:after {
+                //   position: absolute;
+                //   bottom: 42px;
+                //   font-family: 'FontAwesome';
+                //   content: '\f063';
+                //   pointer-events: none;
+                // }
+            }
+            // .month:after {
+            //     left: 118px;
+            // }
+            // .year:after{
+            //     left: 218px;
+            // }
+            select {
+                background: darken($focused_color, 5%);
+                border-radius: 4px;
+                border: 1px solid gray;
+                color: white;
+                font-size: 30px;
+                padding: $margin / 8 $margin / 2 $margin / 8 $margin / 3;
+                width: 100%;
+            }
+        }
+        .front-card-brand{
+            width: 20%;
+            float: right;
+            padding: $margin*1.35 0 0 0;
+            select{
+                // background: darken(#3d89b8, 10%);
+                border-radius: 4px;
+                border: 1px solid gray;
+                color: white;
+                font-size: 30px;
+                padding: $margin/8 $margin/2 $margin/8 $margin/3;
+                width: 100%;
+            }
+            .master{
+                width: 100%;
+            }
+        }
+    }
+    .back {
+        top: 130px;
+        left: 300px;
+        z-index: 1;
+        padding: 0;
+        .magnetic-strip {
+            background: black;
+            margin-top: $margin;
+            height: 60px;
+            width: 100%;
+        }
+        .credit-card-ccv {
+            text-align: right;
+        }
+        .credit-card-ccv-label {
+            padding: $margin / 2 $margin $margin / 4;
+        }
+      
+        .credit-card-ccv-strip {
+            // margin: 0 $margin;
+            margin: 0;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .credit-card-ccv-prefix {
+            position: absolute;
+            float: right;
+            right: 25%;
+            color: black;
+            font-size: 24px;
+            letter-spacing: 2.5px;
+            padding: $margin / 1.6 $margin / 2;
+            @include skew(10deg, 0);
+        }
+      
+        // .credit-card-ccv-box {
+        //     background: white;
+        //     position: absolute;
+        //     top: 125px;
+        //     right: $margin + 5px;
+        //     content: '';
+        //     border-radius: 4px;
+        //     border: 1px solid gray;
+        //     height: 46px;
+        //     width: 80px;
+        // }
+      
+        input {
+            position: absolute;
+            float: right;
+            right: 5%;
+            border-radius: 4px;
+            color: black;
+            font-size: 26px;
+            margin: $margin/3 0 0 0;
+            width: 20%;
+            text-align: center;
+            // @include skew(10deg, 0);
+        }
+    }
+}
+
+
