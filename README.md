@@ -8,3 +8,6 @@ http://amy801101.github.io/dailyUI/day2/index.html
 
 ## day3 - Landing Page
 http://amy801101.github.io/dailyUI/day3/index.html
+
+## day4 - Caculator
+http://amy801101.github.io/dailyUI/day4/index.html
