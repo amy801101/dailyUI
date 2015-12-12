@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=VT323|Pacifico|Nova+Mono);
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Nova Mono', monospace;
+  background-color: skyblue; }
+
+.contour {
+  position: relative;
+  width: 350px;
+  margin: 10px auto;
+  padding: 20px 0 0 0;
+  background-color: black;
+  border: 2px solid #666;
+  border-radius: 25px;
+  box-shadow: 5px 5px 2px #333; }
+  .contour .btns {
+    background-color: grey;
+    border-radius: 18.75px;
+    padding: 10px; }
+    .contour .btns .btn {
+      width: 55px;
+      margin: 10px 5px;
+      padding: 5px;
+      text-align: center;
+      font-size: 2em;
+      box-shadow: 3px 3px 1px black; }
+    .contour .btns .double {
+      width: 130px; }
+  .contour .result {
+    position: relative;
+    height: 60px;
+    width: 250px;
+    margin: 20px auto;
+    border: 2px solid #888;
+    border-radius: 7px;
+    background-color: #6F7558;
+    box-shadow: 3px 3px 4px #444 inset; }
+  .contour .result h2 {
+    width: 230px;
+    position: relative;
+    text-align: right;
+    font-family: 'VT323', monospace;
+    margin: 4px 8px auto auto;
+    font-size: 3em; }
+
+/*# sourceMappingURL=style.css.map */
