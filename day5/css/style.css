@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=VT323|Pacifico|Nova+Mono);
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    $Box
+\*------------------------------------*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+    $REST
+\*------------------------------------*/
+body {
+  font-size: 6px;
+  background-color: #31bde4;
+  overflow: hidden;
+  font-family: 'Nova Mono', monospace; }
+
+span.iphone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100em;
+  width: 50em;
+  margin-left: -25em;
+  margin-top: -50em;
+  background-size: 50em 100em;
+  background-image: url("http://beta.rss-ems.com/download/iphone.png");
+  background-repeat: no-repeat; }
+
+.desktop {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  width: 242px;
+  height: 420px;
+  top: 92px;
+  left: 32px;
+  filter: blur(5px);
+  opacity: 0.7; }
+
+.app_icon {
+  display: block;
+  position: relative;
+  z-index: 10;
+  width: 125px;
+  height: auto;
+  margin-top: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FE5900;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px #FF1200; }
+
+.app_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 10; }
+  .app_logo .do {
+    display: inline-block;
+    position: relative;
+    left: 10px; }
+  .app_logo .more {
+    display: inline-block;
+    position: relative;
+    color: white;
+    left: -5px; }
+
+/*------------------------------------*\
+    $ANIMATIONS
+\*------------------------------------*/
+@-webkit-keyframes littleBoxes {
+  25% {
+    width: 10em;
+    height: 10em;
+    top: 50%;
+    left: 50%;
+    margin: -5em 0 0 -35em;
+    -webkit-transform: rotate(-90deg);
+    border-radius: 0.5em; }
+  50% {
+    -webkit-transform: rotate(-180deg);
+    top: 50%;
+    left: 50%;
+    width: 20em;
+    height: 35em;
+    margin: -17.5em 0 0 -10em;
+    border-radius: 0em; }
+  75% {
+    width: 10em;
+    height: 10em;
+    top: 50%;
+    left: 50%;
+    margin: -5em 0 0 25em;
+    -webkit-transform: rotate(-270deg);
+    border-radius: 0.5em; }
+  100% {
+    top: 100%;
+    left: 50%;
+    margin-left: 25em; } }
+
+/*# sourceMappingURL=style.css.map */
