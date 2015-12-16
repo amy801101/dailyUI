@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,500,600,700);
+/* Reset CSS */
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+/* End Reset CSS */
+
+body {
+  font: normal 14px/20px 'Open Sans', sans-serif;
+  background: url('https://2.bp.blogspot.com/-QCNLvg32ulU/VaOWslE-aXI/AAAAAAAAGAc/KYWYae8-hFA/s1600/background.jpg') top/cover no-repeat;
+  color: #333;
+}
+
+.wrap {
+  max-width: 625px;
+  min-height: 450px;
+  max-height: 450px;
+  margin: 100px auto;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/bg.jpg); top/cover no-repeat;
+}
+
+.right-menu {
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+
+.right-menu-btn {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 43px 20px;
+	background-color: white;
+	font-size: 22px;
+	text-align: center;
+	border-bottom: 1px solid #B7B7B7;
+	color: #B7B7B7;
+}
+
+.right-menu-btn i {
+	display: block;
+}
+
+.right-menu-btn span {
+	font-size: .75em;
+}
+
+.right-menu a:hover {
+	color: #222;
+}
+
+.right-menu .active {
+	color: black;
+}
+
+.right-menu  a.active:after {
+  content: '';
+  height: 0;
+  width: 0;
+  border: 11px solid transparent;
+  position: absolute;
+  left: 100%;
+  top: 40%;
+  border-left: 11px solid #fff;
+}
+
+/* Content */
+.content{
+	text-align: center;
+	padding-top: 50px;
+}
+.avatar {
+    display: block;
+    text-align: center;
+    margin-left: 120px;
+}
+.avatar img {
+    height: 150px;
+    padding: 5px;
+    margin-top: 10px;
+    background: #FFF url(../img/avatar.jpg) repeat scroll 50% 0%;
+    background-size: 300px auto;
+    border-radius: 50%;
+}
+.bubble {
+    background: #FFF none repeat scroll 0% 0%;
+    display: block;
+    width: 42%;
+    text-align: center;
+    margin: 15px auto 0px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: normal;
+    position: relative;
+}
+.bubble h4{
+	margin: 5px;
+}
+
+
+/* Footer */
+.footer {
+	float: right;
+	height: 100%;
+	display: block;
+	position: relative;
+	top: 40px;
+	width: 80%;
+	border-top: 1px solid #9E9AAB;
+}
+
+.footer-btn {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 30px 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 18px;
+	text-align: center;
+	border-right: 1px solid #9E9AAB;
+	color: white;
+}
+
+.footer-btn i {
+	display: block;
+}
+
+.footer-btn span {
+	font-size: .75em;
+}
+
+.footer a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.footer a:active {
+	color: black;
+}
