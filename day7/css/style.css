@@ -1,0 +1,150 @@
+/* Reset CSS */
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none; }
+
+/* End Reset CSS */
+body {
+  background: url("../img/bg.jpg") no-repeat;
+  background-position: 0 0;
+  font-family: Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+  box-sizing: border-box; }
+
+.box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px; }
+
+.bg {
+  background: url("../img/bg_blur.png") no-repeat fixed;
+  background-attachment: fixed;
+  background-position: 0 0;
+  width: 500px;
+  height: auto;
+  padding: 0.5em;
+  margin-top: 10px;
+  border-radius: 10px; }
+
+.setting-label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+  font-size: 22px; }
+
+.avatar {
+  display: block;
+  position: relative;
+  z-index: 10; }
+
+.avatar img {
+  display: block;
+  position: relative;
+  top: -55px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 125px;
+  padding: 5px;
+  background: #FFF url(../img/avatar.jpg) repeat scroll 50% 0%;
+  background-size: 300px auto;
+  border-radius: 50%; }
+
+.inner-box {
+  border: white solid 1px;
+  position: relative;
+  margin: 15% 5% 0 5%; }
+  .inner-box .content {
+    color: white; }
+    .inner-box .content .setting-ele {
+      height: 25%;
+      padding-left: 4%;
+      padding-right: 6%; }
+      .inner-box .content .setting-ele p {
+        text-indent: 4em;
+        line-height: 1.5em;
+        width: 50%;
+        display: inline-block; }
+      .inner-box .content .setting-ele .select-ele {
+        display: inline-block;
+        width: 50%;
+        float: right;
+        text-align: center;
+        margin: 15px 0px;
+        color: black;
+        font-weight: bold; }
+
+hr {
+  color: white; }
+
+.toggle-btn {
+  margin: 0.5em 15% 0px 0px;
+  float: right;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==") no-repeat 50px center #e74c3c;
+  cursor: pointer;
+  -webkit-transition: background-color .40s ease-in-out;
+  -moz-transition: background-color .40s ease-in-out;
+  -o-transition: background-color .40s ease-in-out;
+  transition: background-color .40s ease-in-out;
+  cursor: pointer; }
+  .toggle-btn.active {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC") no-repeat 10px center #2ecc71; }
+    .toggle-btn.active .round-btn {
+      left: 45px; }
+  .toggle-btn .round-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -15px;
+    -webkit-transition: all .30s ease-in-out;
+    -moz-transition: all .30s ease-in-out;
+    -o-transition: all .30s ease-in-out;
+    transition: all .30s ease-in-out; }
+  .toggle-btn .cb-value {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day7 - Settings</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="box bg">
+		<!-- <div class="bg box-ele"></div> -->
+		<div class="setting-label">SETTINGS</div>
+		<div class="inner-box box-ele">
+			<div class="avatar">
+            	<img src="http://www.arjunamgain.com.np/images/arjun.jpg">
+			</div>
+			<div class="content">
+				<div class="setting-ele">
+					<p>LANGUAGE</p>
+					<div class="select-ele">CHINESE</div>
+				</div>
+				<hr>
+				<div class="setting-ele">
+					<p>NOTIFICATION</p>
+					<div class="toggle-btn active">
+					  <input type="checkbox"  checked class="cb-value" />
+					  <span class="round-btn"></span>
+					</div>
+				</div>
+				<hr>
+				<div class="setting-ele">
+					<p>BG MUSIC</p>
+					<div class="toggle-btn">
+					  <input type="checkbox"  checked class="cb-value" />
+					  <span class="round-btn"></span>
+					</div>
+				</div>
+				<hr>
+				<div class="setting-ele">
+					<p>INVITATION</p>
+					<div class="toggle-btn active">
+					  <input type="checkbox"  checked class="cb-value" />
+					  <span class="round-btn"></span>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<br><br>
+<!-- 			<hr align="left" style="width: 30%">
+			<hr align="left" style="width: 80%"> -->
+			<hr>
+		</div>	
+		<br style="clear: both"> 
+		<!-- Let parent as big as all children -->
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$( ".box" ).draggable();
+		});
+		$('.cb-value').click(function() {
+		  var mainParent = $(this).parent('.toggle-btn');
+		  if($(mainParent).find('input.cb-value').is(':checked')) {
+		    $(mainParent).addClass('active');
+		  } else {
+		    $(mainParent).removeClass('active');
+		  }
+
+		})
+	</script>
+</body>
+</html>
