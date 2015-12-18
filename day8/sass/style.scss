@@ -1,0 +1,86 @@
+/* Reset CSS */
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+/* End Reset CSS */
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300|Bangers|Abril+Fatface|Covered+By+Your+Grace|Economica:400,700|Changa+One|Mountains+of+Christmas:400,700|Just+Another+Hand);
+body{
+	background: url('../img/lost.jpg') no-repeat;
+	// background: url('../img/bg.jpg') top/cover no-repeat; /* top/cover means auto shrink width and height*/
+	background-position: 0 0;
+	font-family:Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+	box-sizing: border-box;
+	margin: 0px;
+	background-size: 100% auto;
+}
+.lost-man{
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+}
+.label-404{
+	padding-top: 20px;
+	top: 0;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	// font-family: 'Covered By Your Grace', cursive;
+	// font-family: 'Economica', sans-serif;
+	// font-weight: bold
+	// font-family: 'Changa One', cursive;
+	// font-family: 'Just Another Hand', cursive;
+}
+.number-404{
+	position: relative;
+	display: block;
+	font-size: 10em;
+	font-size: 20vw;
+	z-index: 5;
+	// padding: 20% 5%;
+	color: white;
+	width: 100%;
+}
+.left-404, .right-404{
+	position: relative;
+	display: inline-block;
+	font-size: 10em;
+	font-size: 16vw; //for auto scale font size
+	z-index: 5;
+	box-sizing: border-box;
+	color: white;
+	width: 50%;
+}
+.left-404{
+	float:left;
+	padding-right: 4%;
+}
+.right-404{
+	padding-left: 2%;
+}
+
+
