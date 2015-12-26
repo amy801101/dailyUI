@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day9 - Music Player</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="cd-cover">
+			<a href="#pre" class="cover-btn" id="play-pause-btn">
+            	<i class="fa fa-play fa-3x"></i>
+        	</a>
+		</div>
+		<div class="control-panel">
+			<br><hr><br>
+			<div class="cycle-control">
+				<a href="#pre" class="panel-btn">
+	            	<i class="fa fa-random fa-lg"></i>
+	        	</a>
+	        	<a href="#pre" class="panel-btn">
+	            	<i class="fa fa-refresh fa-lg"></i>
+	        	</a>
+			</div>
+			<div class="player-control">
+				<a href="#pre" class="panel-btn">
+	            	<i class="fa fa-backward fa-lg"></i>
+	        	</a>
+	        	<a href="#pre" class="panel-btn main-btn">
+	            	<i class="fa fa-pause fa-2x"></i>
+	        	</a>
+	        	<a href="#pre" class="panel-btn">
+	            	<i class="fa fa-forward fa-lg"></i>
+	        	</a>
+			</div>
+			<div class="social-control">
+				<a href="#pre" class="panel-btn">
+	            	<i class="fa fa-heart-o fa-lg"></i>
+	        	</a>
+	        	<a href="#pre" class="panel-btn">
+	            	<i class="fa fa-share-alt fa-lg"></i>
+	        	</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script!-->
+	<script type="text/javascript">
+		$(function(){
+			$('.cd-cover').click(function(event){
+				$('.wrap').addClass("pullDown");
+				$('#play-pause-btn > i').removeClass("fa-play");
+				$('#play-pause-btn > i').addClass("fa-pause");
+			});
+		});
+	</script>
+</body>
+</html>
